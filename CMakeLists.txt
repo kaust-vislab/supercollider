@@ -223,7 +223,7 @@ endif()
 
 if (SYSTEM_BOOST)
   set(Boost_USE_MULTITHREADED      ON)
-  find_package( Boost 1.48.0 COMPONENTS thread system filesystem program_options regex test )
+  find_package( Boost 1.48.0 COMPONENTS thread system filesystem program_options regex unit_test_framework )
 
   if (SC_OX)
 	  set(Boost_FOUND OFF) # boost 1.48 does not like c++11
